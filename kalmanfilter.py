@@ -23,7 +23,7 @@ class Kalman:
 
         # Matriz de covariância da medição, ou seja, o seu ruído
         # (obs: o valor abaixo foi escolhido con5iderando a variância escolhida para a simulação das medições ruidosas)
-        self.R =  np.eye(2) * 10
+        self.R =  np.eye(2) * 0.8
 
     def predict(self):
         self.x = self.F @ self.x
