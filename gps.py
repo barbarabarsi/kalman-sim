@@ -53,9 +53,8 @@ def gps(path):
 		idx = list(measurements).index(m)
 		name = f"path_frame_0{idx+1}" if idx < 9 else f"path_frame_{idx+1}"
 
-		plt.plot(*zip(*m_plot), 'o', markersize=2, color='orange', label="Medições")
+		plt.plot(*zip(*m_plot), 'o', markersize=2, color='blue', label="Medições")
 		plt.plot(*zip(*predictions), color='red', label="Predição de Kalman")
-		# plt.plot(*zip(*r_plot), markersize=1, color='green', label="Caminho real")
 
 		plt.xticks(np.arange(0, adj[-1][0], 50))
 		plt.yticks(np.arange(min(y_ax), max(y_ax), 50))
