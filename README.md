@@ -5,6 +5,8 @@
 
 Esse projeto simula a aplicação de um filtro de Kalman para determinar a posição de um carro em movimento dentro de um túnel (ou qualquer local onde os sensores estejam suscetíveis a ruído). O programa utiliza leituras simuladas de um GPS e aplica o filtro de Kalman para suavizar os dados ruidosos e obter uma trajetória mais precisa.
 
+Para mais informações, acesse o relatório do projeto: [Filtro de Kalman Simulator - Relatório Final](https://drive.google.com/file/d/1dWhBI-8oX5gOs4Oe2sKDSNApTyrZJK1H/view?usp=drive_link)
+
 ## Modelagem do Sistema
 A modelagem do sistema considera 4 estados: posição ao norte, posição ao leste, velocidade ao norte e velocidade ao leste, sendo os dois primeiros os que serão devolvidos ao usuário. Aqui considera-se que a acelerção é constante,que a modelagem das equações está correta e que não existem forças externas atuando no sistema.
 
